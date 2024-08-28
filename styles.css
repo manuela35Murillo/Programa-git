@@ -1,0 +1,235 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Estilos básicos */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #eee;
+}
+
+/* Encabezado */
+header {
+    background: #333;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1.lettering {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 0;
+    color: #D1A1D2;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav button {
+    background: transparent;
+    border: 2px solid #b39ddb;
+    color: #b39ddb;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+header nav button:hover {
+    background: #b39ddb;
+    color: #000;
+}
+
+button:focus, .sidebar-button:focus, .pets-announcement:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Sección específica para tratar el contenido */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #222;
+    color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+}
+
+/* Contenedores */
+.container {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #b39ddb;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+/* Estilos específicos para el contenedor de contacto */
+#contacto .container {
+    max-width: 700px;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+/* Títulos de secciones */
+#tratamiento-faciales h2, #contacto h2 {
+    color: #b39ddb;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-container {
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #b39ddb;
+    margin-bottom: 20px;
+}
+
+.service-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.service-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b39ddb;
+    border-radius: 5px;
+    background: #333;
+    color: #eee;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-container select:focus {
+    border-color: #9e76d1;
+    outline: none;
+}
+
+form input[type="text"], form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b39ddb;
+    border-radius: 5px;
+    background: #222;
+    color: #eee;
+    font-family: 'Playfair Display', serif;
+}
+
+form button, .btn-submit {
+    background: #b39ddb;
+    border: none;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+form button:hover, .btn-submit:hover {
+    background: #9e76d1;
+}
+
+/* Pie de Página */
+footer {
+    background: #333;
+    color: #eee;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Barra lateral */
+.sidebar, .left-sidebar {
+    position: fixed;
+    top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background: #333;
+    color: #eee;
+    border: 2px solid #b39ddb; /* Borde morado */
+}
+
+.sidebar {
+    right: 20px;
+    width: 220px; /* Ancho ajustable */
+}
+
+.left-sidebar {
+    left: 20px;
+    width: 250px; /* Ancho ajustable */
+    font-size: 14px;
+    overflow: hidden;
+}
+
+/* Títulos de la barra lateral */
+.sidebar-title, .left-sidebar h2 {
+    color: #b39ddb;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Botones de la barra lateral */
+.sidebar-button, .left-sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #b39ddb;
+    background: #333;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #b39ddb;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-button:hover, .left-sidebar a:hover {
+    background: #b39ddb;
+    color: #333;
+}
+
+/* Ajustes para el contenido dentro de la barra lateral */
+.sidebar-content, .left-sidebar-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sidebar-content p, .left-sidebar-content p {
+    margin-bottom: 10px;
+}

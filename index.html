@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética Facial M&M</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1 class="lettering">Estética Facial M&M</h1>
+        <nav>
+            <button>Inicio</button>
+            <button>Servicios</button>
+            <button>Contacto</button>
+        </nav>
+    </header>
+    
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Contenedor de Belleza de las Mujeres -->
+        <div class="left-sidebar">
+            <h2>La Belleza de las Mujeres</h2>
+            <p>En Estética Facial M&M, creemos que la belleza de cada mujer es única y merece ser celebrada. Nuestra misión es resaltar esa belleza natural y ayudar a cada cliente a sentirse más segura y radiante. No solo ofrecemos tratamientos faciales, sino que también aceptamos el uso de "petyfriend" como un complemento que potencia aún más la belleza y el cuidado personal. Ven y descubre el verdadero potencial de tu belleza con nosotros.</p>
+        </div>
+
+        <!-- Contenedor de Contacto -->
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form action="enviar_formulario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <!-- Contenedor para el tipo de servicio -->
+                    <div class="service-container">
+                        <label for="tipo-servicio">Tipo de Servicio:</label>
+                        <select id="tipo-servicio" name="tipo-servicio" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="tratamiento-facial">Tratamiento Facial</option>
+                            <option value="depilacion">Depilación</option>
+                            <option value="masajes">Masajes</option>
+                            <option value="limpieza-facial">Limpieza Facial</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contenedor para el botón de bienvenida -->
+        <div class="welcome-container">
+            <a href="#" class="welcome-button">Bienvenidos a Estética Facial M&M</a>
+        </div>
+    </main>
+    
+    <!-- Barra Lateral de Otros Servicios -->
+    <div class="sidebar">
+        <div class="sidebar-title">Otros Servicios</div>
+        <a href="#" class="sidebar-button">Depilación</a>
+        <a href="#" class="sidebar-button">Masajes</a>
+        <a href="#" class="sidebar-button">Limpieza Facial</a>
+        <a href="#" class="sidebar-button">Tratamientos Faciales</a>
+    </div>
+    
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Estética Facial M&M. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Incluir el archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
